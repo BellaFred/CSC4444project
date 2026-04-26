@@ -204,14 +204,13 @@ class Observation:
     def played_cards(self) -> list[Card]:
         """
         Cards that are definitely known: completed tricks + cards already
-        played in the *current* (in-progress) trick.
+        played in the *current* trick.
 
         current_trick holds stale values between tricks (it is overwritten at
         the start of each trick but never explicitly cleared at the end).
         We only include current_trick cards when a trick is actually in
         progress, i.e. the number of non-None slots is less than NUM_PLAYERS
         OR the current_trick cards are not already in tricks_played.
-        Safest: only add current_trick cards that are NOT already in tricks_played.
         """
         played = self.state.played_cards()   # all completed tricks
         played_set = set(played)
