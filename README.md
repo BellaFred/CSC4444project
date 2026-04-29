@@ -76,7 +76,7 @@ Used for tracking experiments, but it is not required to run locally.
 Run Training
 -python train.py
 Run a Test Game
--python play.py
+-python eval.py
 
 5. Running Example (TinyZero)
 To test the framework before using Spades:
