@@ -59,7 +59,6 @@ Maintains:
 
 1. Clone the Repository
 -git clone https://github.com/BellaFred/CSC4444project.git
--cd <project-folder-name>
 
 2. Install Requirements
 -Python 3.8+
