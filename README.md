@@ -52,34 +52,37 @@ Maintains:
 - Used to validate training pipeline and run locally (offline mode)
 - Transition planned to full Spades environment
 
-## Results
--
-
 ## Setup/Running the Project
 
 1. Clone the Repository
 -git clone https://github.com/BellaFred/CSC4444project.git
 
-2. Install Requirements
--Python 3.14.4
-     python3 -m venv venv
-     source venv/bin/activate
--pip install -r
--pip install numpy torch tqdm wandb numba
+2. Install Requirements  
+-Python 3.14.4  
+     python3 -m venv venv  
+     source venv/bin/activate  
+-pip install -r  
+-pip install numpy torch tqdm wandb numba  
 
-3. Set Up Weights & Biases (wandb)
-Used for tracking experiments, but it is not required to run locally.
--pip install wandb
-  wandb login
-   -You may need to create an account at Weights & Biases (https://wandb.ai)
+3. Set Up Weights & Biases (wandb)  
+Used for tracking experiments, but it is not required to run locally.  
+- pip install wandb  
+  wandb login  
+   - You may need to create an account at Weights & Biases (https://wandb.ai)  
    
 6. Run the Project
-Run Training
--tinyzero/tictactoe/two_dim/train.py
--python train.py
-Run a Test Game
--tinyzero/tictactoe/two_dim/eval.py
--python eval.py
--tinyzero/tictactoe/two_dim/eval.py
 
-ng and is useful for debugging before running full Spades training
+Run Training  
+- tinyzero/spades/train.py
+    - To change the number of games the agent is trained on, adjust the variables SELFPLAY_GAMES and BATCH_SIZE in train.py.
+    - For reference, SELFPLAY_GAMES = 50 and BATCH_SIZE = 10 takes around 5 mins to run.  
+- python train.py
+
+Run a Test Game  
+- tinyzero/spades/eval.py
+    - To change the number of evaluation games, adjust the variable EVAL_GAMES in eval.py.
+    - For reference, EVAL_GAMES = 10 takes around 20 mins to run.  
+- python eval.py
+- tinyzero/spades/tournament.py
+    - Running tournament.py will test the AlphaZero agent against our ISMCTS agent
+- python tournament.py
