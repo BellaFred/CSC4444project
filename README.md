@@ -84,5 +84,5 @@ Run a Test Game
     - For reference, EVAL_GAMES = 10 takes around 20 mins to run.  
 - python eval.py
 - tinyzero/spades/tournament.py
-    - Running tournament.py will test the AlphaZero agent against our ISMCTS agent
+    - Running tournament.py will test the AlphaZero agent and the Classic MCTS agent against our ISMCTS agent
 - python tournament.py
