@@ -78,5 +78,3 @@ Run a Test Game
 -tinyzero/tictactoe/two_dim/eval.py  
 -python eval.py  
 -tinyzero/tictactoe/two_dim/eval.py  
-
-ng and is useful for debugging before running full Spades training
