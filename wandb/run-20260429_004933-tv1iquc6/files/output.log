@@ -1,0 +1,21 @@
+  5%|█████▎                                                                                                     | 5/100 [12:27<3:56:38, 149.45s/it]
+Traceback (most recent call last):
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\tournament.py", line 171, in <module>
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\tournament.py", line 109, in run_match
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\tournament.py", line 86, in play
+    if __name__ == "__main__":
+                   ^^^^^^^^^^^
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\mcts.py", line 106, in play
+    root = search(
+      game, agent.value_fn, agent.policy_fn, search_iterations, c_puct=c_puct, dirichlet_alpha=dirichlet_alpha
+    )
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\mcts.py", line 94, in search
+    leaf = select(root, game, c_puct)
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\mcts.py", line 52, in select
+    ucb_scores = get_ucb_scores(current, c_puct)
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\mcts.py", line 46, in get_ucb_scores
+    return get_ucb_scores_jitted(node.children_values, node.children_priors, node.visits, node.children_visits, c_puct)
+  File "C:\Users\bella\cs4444\CSC4444project\.venv\Lib\site-packages\numba\core\serialize.py", line 30, in _numba_unpickle
+    def _numba_unpickle(address, bytedata, hashed):
+
+KeyboardInterrupt

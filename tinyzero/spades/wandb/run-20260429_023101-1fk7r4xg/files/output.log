@@ -1,0 +1,8 @@
+Initializing Environment...
+AlphaZero Model loaded.
+
+MATCHUP: ISMCTS vs AlphaZero
+RESULT: Team 0 wins! (8 to 5)
+
+MATCHUP: ISMCTS vs Classic MCTS
+RESULT: Team 0 wins! (9 to 4)

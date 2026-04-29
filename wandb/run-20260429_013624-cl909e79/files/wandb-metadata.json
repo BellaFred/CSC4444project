@@ -1,0 +1,28 @@
+{
+  "os":  "Windows-11-10.0.26200-SP0",
+  "python":  "CPython 3.13.13",
+  "startedAt":  "2026-04-29T06:36:24.456704Z",
+  "program":  "C:\\Users\\bella\\cs4444\\CSC4444project\\tinyzero\\spades\\train.py",
+  "codePath":  "tinyzero\\spades\\train.py",
+  "codePathLocal":  "tinyzero\\spades\\train.py",
+  "git":  {
+    "remote":  "https://github.com/BellaFred/CSC4444project.git",
+    "commit":  "154e4eb2ccb95d6a3da9406dc24b98b3812d9470"
+  },
+  "email":  "bfred12@lsu.edu",
+  "root":  "C:\\Users\\bella\\cs4444\\CSC4444project",
+  "host":  "Bella-Laptop",
+  "executable":  "C:\\Users\\bella\\cs4444\\CSC4444project\\.venv\\Scripts\\python.exe",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "510507945984",
+      "used":  "307397132288"
+    }
+  },
+  "memory":  {
+    "total":  "16464842752"
+  },
+  "writerId":  "lith53pminj7jedvqxlcszzfa8q8etxk"
+}

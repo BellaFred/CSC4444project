@@ -1,0 +1,47 @@
+_wandb:
+    value:
+        cli_version: 0.26.1
+        e:
+            xq8028fcceomgp4a1wjby1twnml0zi1p:
+                codePath: tinyzero\spades\tournament.py
+                codePathLocal: tinyzero\spades\tournament.py
+                cpu_count: 6
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "510507945984"
+                        used: "307495915520"
+                email: bfred12@lsu.edu
+                executable: C:\Users\bella\cs4444\CSC4444project\.venv\Scripts\python.exe
+                git:
+                    commit: 154e4eb2ccb95d6a3da9406dc24b98b3812d9470
+                    remote: https://github.com/BellaFred/CSC4444project.git
+                host: Bella-Laptop
+                memory:
+                    total: "16464842752"
+                os: Windows-11-10.0.26200-SP0
+                program: C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\tournament.py
+                python: CPython 3.13.13
+                root: C:\Users\bella\cs4444\CSC4444project
+                startedAt: "2026-04-29T05:45:00.899958Z"
+                writerId: xq8028fcceomgp4a1wjby1twnml0zi1p
+        m: []
+        python_version: 3.13.13
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 13
+                - 16
+            "4": 3.13.13
+            "5": 0.26.1
+            "8":
+                - 3
+            "12": 0.26.1
+            "13": windows-amd64
+eval_games:
+    value: 100
+search_iterations:
+    value: 100

@@ -1,0 +1,56 @@
+Starting training
+ 68%|███████████████████████████████████████████████▌                      | 34/50 [05:16<02:29,  9.32s/it]
+Saving training state
+Saving training state
+Traceback (most recent call last):
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\train.py", line 49, in <module>
+    values_losses, policies_losses = agent.train_step(
+                                     ~~~~~~~~~~~~~~~~^
+      game, SEARCH_ITERATIONS, BATCH_SIZE, TRAINING_EPOCHS, c_puct=C_PUCT, dirichlet_alpha=DIRICHLET_ALPHA
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\agents.py", line 62, in train_step
+    first_person_result, game_buffer = self._selfplay(
+                                       ~~~~~~~~~~~~~~^
+      game, search_iterations, c_puct=c_puct, dirichlet_alpha=dirichlet_alpha
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\agents.py", line 46, in _selfplay
+    root_node = search(
+      game, self.value_fn, self.policy_fn, search_iterations, c_puct=c_puct, dirichlet_alpha=dirichlet_alpha
+    )
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\mcts.py", line 94, in search
+    leaf = select(root, game, c_puct)
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\mcts.py", line 56, in select
+    game.step(current.action)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\spades_env.py", line 84, in step
+    self._history.append(deepcopy(self._state))
+                         ~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 163, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 260, in _reconstruct
+    state = deepcopy(state, memo)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 137, in deepcopy
+    y = copier(x, memo)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 222, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 137, in deepcopy
+    y = copier(x, memo)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 197, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ~~~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 137, in deepcopy
+    y = copier(x, memo)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 197, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ~~~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 163, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\copy.py", line 269, in _reconstruct
+    y.__dict__.update(state)
+    ~~~~~~~~~~~~~~~~~^^^^^^^
+KeyboardInterrupt

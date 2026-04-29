@@ -1,0 +1,16 @@
+  0%|                                                                              | 0/100 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\tournament.py", line 162, in <module>
+    results = run_match(game, agent1, agent2)
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\tournament.py", line 95, in run_match
+    result = pit(
+        game,
+    ...<3 lines>...
+        kwargs2,
+    )
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\mcts.py", line 116, in pit
+    action = play(game, current_agent, **current_agent_play_kwargs)
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\mcts.py", line 107, in play
+    game, agent.value_fn, agent.policy_fn, search_iterations, c_puct=c_puct, dirichlet_alpha=dirichlet_alpha
+          ^^^^^^^^^^^^^^
+AttributeError: 'ISMCTSWrapper' object has no attribute 'value_fn'

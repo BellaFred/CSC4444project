@@ -10,7 +10,7 @@ sys.path.append(os.getcwd())
 from tinyzero.models import LinearNetwork  # noqa: E402
 from tinyzero.agents import AlphaZeroAgentTrainer  # noqa: E402
 
-OUT_DIR = "spades/out"
+OUT_DIR = "tinyzero/spades/out"
 INIT_FROM_CHECKPOINT = False
 SELFPLAY_GAMES = 50
 SELFPLAY_GAMES_PER_SAVE = SELFPLAY_GAMES // 4

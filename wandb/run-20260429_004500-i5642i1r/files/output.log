@@ -1,0 +1,10 @@
+  0%|                                                                                                                      | 0/100 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\tournament.py", line 172, in <module>
+    results = run_match(game, agent1, agent2)
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\tournament.py", line 110, in run_match
+    action = current_agent.play(game, **current_kwargs)
+  File "C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\tournament.py", line 87, in play
+    return self.agent.play(game, **kwargs)
+           ^^^^^^^^^^^^^^^
+AttributeError: 'ClassicMCTSAgent' object has no attribute 'play'
