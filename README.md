@@ -62,23 +62,24 @@ Maintains:
 
 2. Install Requirements
 -Python 3.14.4
+     python3 -m venv venv
+     source venv/bin/activate
 -pip install -r
-If there is no requirements file, install manually:
--pip install numpy torch (wandb)
+-pip install numpy torch tqdm wandb numba
 
 3. Set Up Weights & Biases (wandb)
 Used for tracking experiments, but it is not required to run locally.
 -pip install wandb
--wandb login
+  wandb login
    -You may need to create an account at Weights & Biases (https://wandb.ai)
-
-4. Run the Project
+   
+6. Run the Project
 Run Training
+-tinyzero/tictactoe/two_dim/train.py
 -python train.py
 Run a Test Game
+-tinyzero/tictactoe/two_dim/eval.py
 -python eval.py
+-tinyzero/tictactoe/two_dim/eval.py
 
-5. Running Example (TinyZero)
-To test the framework before using Spades:
--python examples/tictactoe/train.py
-  -This runs a simpler game to verify everything is working and is useful for debugging before running full Spades training
+ng and is useful for debugging before running full Spades training
