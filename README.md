@@ -61,7 +61,7 @@ Maintains:
 -git clone https://github.com/BellaFred/CSC4444project.git
 
 2. Install Requirements
--Python 3.8+
+-Python 3.14.4
 -pip install -r requirements.txt
 If there is no requirements file, install manually:
 -pip install numpy torch (wandb)
