@@ -1,4 +1,4 @@
-from game import TicTacToe
+from spades_env import SpadesEnv
 import torch
 from train import OUT_DIR, SEARCH_ITERATIONS
 from tqdm import tqdm
@@ -11,10 +11,10 @@ from tinyzero.models import LinearNetwork  # noqa: E402
 from tinyzero.agents import AlphaZeroAgent, ClassicMCTSAgent  # noqa: E402
 from tinyzero.mcts import pit  # noqa: E402
 
-EVAL_GAMES = 100
+EVAL_GAMES = 10
 
 if __name__ == "__main__":
-  game = TicTacToe()
+  game = SpadesEnv()
 
   model = LinearNetwork(game.observation_shape, game.action_space)
   model.load_state_dict(torch.load(f"{OUT_DIR}/model.pth"))

@@ -1,0 +1,43 @@
+_wandb:
+    value:
+        cli_version: 0.26.1
+        e:
+            mwbcsn0txzn8tedfvx77hqu4tib3w0wj:
+                codePath: tinyzero\spades\train.py
+                codePathLocal: tinyzero\spades\train.py
+                cpu_count: 6
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "510507945984"
+                        used: "307184594944"
+                email: bfred12@lsu.edu
+                executable: C:\Users\bella\cs4444\CSC4444project\.venv\Scripts\python.exe
+                git:
+                    commit: 4e236c79e76949b657da49b152557e00247f7155
+                    remote: https://github.com/BellaFred/CSC4444project.git
+                host: Bella-Laptop
+                memory:
+                    total: "16464842752"
+                os: Windows-11-10.0.26200-SP0
+                program: C:\Users\bella\cs4444\CSC4444project\tinyzero\spades\train.py
+                python: CPython 3.13.13
+                root: C:\Users\bella\cs4444\CSC4444project
+                startedAt: "2026-04-29T05:14:23.011181Z"
+                writerId: mwbcsn0txzn8tedfvx77hqu4tib3w0wj
+        m: []
+        python_version: 3.13.13
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 2
+                - 13
+            "4": 3.13.13
+            "5": 0.26.1
+            "8":
+                - 3
+            "12": 0.26.1
+            "13": windows-amd64

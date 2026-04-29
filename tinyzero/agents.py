@@ -1,9 +1,9 @@
 import torch
 import torch.nn.functional as F
 import numpy as np
-from replay_buffer import ReplayBuffer
+from tinyzero.replay_buffer import ReplayBuffer
 import copy
-from mcts import search
+from tinyzero.mcts import search
 
 
 class ClassicMCTSAgent:
