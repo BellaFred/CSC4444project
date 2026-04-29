@@ -52,9 +52,6 @@ Maintains:
 - Used to validate training pipeline and run locally (offline mode)
 - Transition planned to full Spades environment
 
-## Results
--
-
 ## Setup/Running the Project
 
 1. Clone the Repository
