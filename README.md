@@ -66,19 +66,18 @@ Maintains:
 
 3. Set Up Weights & Biases (wandb)  
 Used for tracking experiments, but it is not required to run locally.  
--pip install wandb  
+- pip install wandb  
   wandb login  
-   -You may need to create an account at Weights & Biases (https://wandb.ai)  
+   - You may need to create an account at Weights & Biases (https://wandb.ai)  
    
 6. Run the Project  
 Run Training  
--tinyzero/spades/train.py
+- tinyzero/spades/train.py
 - To change the number of games the agent is trained on, adjust the variables SELFPLAY_GAMES and BATCH_SIZE in train.py.
 - For reference, SELFPLAY_GAMES = 50 and BATCH_SIZE = 10 takes around 5 mins to run.  
--python train.py  
+- python train.py  
 Run a Test Game  
--tinyzero/spades/eval.py
+- tinyzero/spades/eval.py
 - To change the number of evaluation games, adjust the variable EVAL_GAMES in eval.py.
 - For reference, EVAL_GAMES = 10 takes around 20 mins to run.  
--python eval.py  
--tinyzero/spades/eval.py  
+- python eval.py   
