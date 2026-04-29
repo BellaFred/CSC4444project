@@ -82,4 +82,7 @@ Run a Test Game
 - tinyzero/spades/eval.py
     - To change the number of evaluation games, adjust the variable EVAL_GAMES in eval.py.
     - For reference, EVAL_GAMES = 10 takes around 20 mins to run.  
-- python eval.py   
+- python eval.py
+- tinyzero/spades/tournament.py
+    - Running tournament.py will test the AlphaZero agent against our ISMCTS agent
+- python tournament.py
